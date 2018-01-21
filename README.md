@@ -99,4 +99,23 @@ Our CRM contains many datagrids. The datagrid is a spreadsheet-like data table t
 
 3.) Complete the installation by configuring the conf.php file.
 
-Before we begin coding, we must specify the database information in conf.php, the phpGrid configuration file. Here is an example of database connection settings:
+Before we begin coding, we must specify the database information in conf.php, the phpGrid configuration file. Here is an example of database connection settings. We have to change the database name in "PHPGRID_DB_NAME" from "sampledb" to "custom_crm".
+
+The following are connection setting within the conf.php file in the phpGrid zip folder we downloaded:
+
+- PHPGRID_DB_HOSTNAME — web server IP or host name
+- PHPGRID_DB_USERNAME — database user name
+- PHPGRID_DB_PASSWORD — database password
+- PHPGRID_DB_NAME — database name of our CRM
+- PHPGRID_DB_TYPE — type of database
+- PHPGRID_DB_CHARSET — always ‘utf8’ in MySQL
+
+
+# CRM Main Pages
+
+- Tasks
+- Leads
+- Opportunities
+- Customers / Won
+
+Each page indicates a different stage in a typical sales cycle.
