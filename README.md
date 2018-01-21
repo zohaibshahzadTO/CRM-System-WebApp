@@ -119,3 +119,10 @@ The following are connection setting within the conf.php file in the phpGrid zip
 - Customers / Won
 
 Each page indicates a different stage in a typical sales cycle.
+
+
+# Tasks Page
+
+When a sales team member logged in, the first page he sees is a list of current tasks.
+
+As you may recall, our Notes table holds all the sales activity information. We can create a datagrid and populate it from the Notes table using phpGrid.
