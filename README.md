@@ -88,3 +88,15 @@ Below is the database diagram of our simple CRM. The key symbol in each table re
 # install.sql
 
 After understanding the database table structure, you can download the "install.sql" script in the db folder in this github repository and use either MySQL Workbench or Sequel Pro to run the SQL script. If you're using MySQL Workbench like I did, first establish a connection to database and create a new database schema (eg. crm_database). Run the "install.sql" script and click on "Data import" to dump the contents of the "install.sql" file into the new database schema (crm_database) you created. After the data dump, now go on the "database" tab on the program and click on "reverse engineer". After reverse engineering the sql script, the program will generate the database table diagram that you saw above as well as the primary and foreign keys of the db.
+
+# phpGrid Setup
+
+Our CRM contains many datagrids. The datagrid is a spreadsheet-like data table that displays rows and columns representing records and fields from the database table. The datagrid gives the end-user ability to read and write to database tables on a webpage. We can use a datagrid tool from phpGrid. We use a tool instead of building them from scratch because developing the datagrid is usually tedious and error-prone. The datagrid library will handle all internal database CRUD (Create, Remove, Update, and Delete) operations for us with better and faster results with little code. To install phpGrid, follow these steps:
+
+1.) Unzip the phpGrid download file.
+
+2.) Upload the phpGrid_lite folder to the phpGrid folder.
+
+3.) Complete the installation by configuring the conf.php file.
+
+Before we begin coding, we must specify the database information in conf.php, the phpGrid configuration file. Here is an example of database connection settings:
