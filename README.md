@@ -59,3 +59,32 @@ The Contact table contains basic customer information including names, company a
 The Notes table stores all sales activity information such as meetings and phone calls.
 
 The Users table holds login information about users of the system such as usernames and passwords. Users can also have roles, such as Sales or Manager.
+
+All other tables are lookup tables to join to the three main relational database tables.
+
+- contact_status — contains contact status such as Lead and Opportunity. Each indicates a different stage in a typical sales cycle
+
+- task_status — the task status can be either Pending or Completed
+
+- user_status — a sale person can be Active or Inactive
+
+- todo_type — a type of task either Task or Meeting
+
+- todo_desc — description of a task such as Follow Up Email, Phone Call, and Conference etc.
+
+- roles — a user can be either a Sales Rep or a Manager
+
+# Database Schema Diagram
+
+A database schema is the structure that represents the logical view such as tables, views, or primary and foreign keys of the entire database. We generated this database table diagram via MySQL Workbench. A database schema includes entities and the relationship among them.
+
+It is a good practice to have one primary key for each table in a relational database. A primary key is a unique identifier for each record. It can be the social security number (SSN), vehicle identification number (VIN), or auto-increment number. This is a unique number that is generated when a new record is inserted into a table.
+
+Below is the database diagram of our simple CRM. The key symbol in each table represents the table primary key.
+
+
+
+
+# install.sql
+
+After understanding the database table structure, you can download the "install.sql" script in the db folder in this github repository and use either MySQL Workbench or Sequel Pro to run the SQL script. If you're using MySQL Workbench like I did, first establish a connection to database and create a new database schema (eg. crm_database). Run the "install.sql" script and click on "Data import" to dump the contents of the "install.sql" file into the new database schema (crm_database) you created. After the data dump, now go on the "database" tab on the program and click on "reverse engineer". After reverse engineering the sql script, the program will generate the database table diagram that you saw above as well as the primary and foreign keys of the db.
