@@ -8,11 +8,11 @@ if (stripos($_SERVER['SCRIPT_NAME'], 'apps/phpgrid-custom-crm')) {
     define('PHPGRID_DB_TYPE', 'mysql');  // database type
     define('PHPGRID_DB_CHARSET','utf8'); // ex: utf8(for mysql),AL32UTF8 (for oracle), leave blank to use the default charset
 } else {
-	//* mysql example 
+	//* mysql example
 	define('PHPGRID_DB_HOSTNAME','localhost'); // database host name
 	define('PHPGRID_DB_USERNAME', 'root');     // database user name
 	define('PHPGRID_DB_PASSWORD', ''); // database password
-	define('PHPGRID_DB_NAME', 'sampledb'); // database name
+	define('PHPGRID_DB_NAME', 'custom_crm'); // database name
 	define('PHPGRID_DB_TYPE', 'mysql');  // database type
 	define('PHPGRID_DB_CHARSET','utf8'); // ex: utf8(for mysql),AL32UTF8 (for oracle), leave blank to use the default charset
 }
@@ -31,7 +31,7 @@ define('PHPGRID_DB_HOSTNAME', 'localhost'); // database host name
 define('PHPGRID_DB_PORT', '50000'); // database host name
 define('PHPGRID_DB_USERNAME', 'db2inst1');     // database user name
 define('PHPGRID_DB_PASSWORD', 'db2user99'); // database password
-define('PHPGRID_DB_NAME', 'SAMPLE'); // database name or DSN name (cataloged) 
+define('PHPGRID_DB_NAME', 'SAMPLE'); // database name or DSN name (cataloged)
 define('PHPGRID_DB_TYPE', 'pdo_odbc_db2');  // database type
 define('PHPGRID_DB_CHARSET','utf8'); // ex: utf8(for mysql),AL32UTF8 (for oracle), leave blank to use the default charset
 
@@ -42,7 +42,7 @@ putenv('ODBCINI=/etc/odbc.ini');
 define('PHPGRID_DB_HOSTNAME', '75.126.155.153:50001'); // database host name
 define('PHPGRID_DB_USERNAME', 'user07599');     // database user name
 define('PHPGRID_DB_PASSWORD', 'UviZULzvvvHM'); // database password
-define('PHPGRID_DB_NAME', 'bluemix'); // database name or DSN name (cataloged) 
+define('PHPGRID_DB_NAME', 'bluemix'); // database name or DSN name (cataloged)
 define('PHPGRID_DB_TYPE', 'pdo_odbc_db2');  // database type
 define('PHPGRID_DB_CHARSET','utf8'); // ex: utf8(for mysql),AL32UTF8 (for oracle), leave blank to use the default charset
 
@@ -116,7 +116,7 @@ define('PHPGRID_DB_CHARSET','');
 
 // *** You should define SERVER_ROOT manually when use Apache alias directive or IIS virtual directory ***
 if (stripos($_SERVER['SCRIPT_NAME'], 'apps/phpgrid-custom-crm')) {
-	define('SERVER_ROOT', '/phpGridx/apps/phpgrid-custom-crm/phpGrid_Lite');	
+	define('SERVER_ROOT', '/phpGridx/apps/phpgrid-custom-crm/phpGrid_Lite');
 } else {
 	define('SERVER_ROOT', str_replace(str_replace('\\', '/', realpath($_SERVER['DOCUMENT_ROOT'])),'', str_replace('\\', '/',dirname(__FILE__))));
 }
