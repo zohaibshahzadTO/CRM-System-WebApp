@@ -134,3 +134,13 @@ The leads page contains list of current leads that the sales person is responsib
 # Opportunity Page
 
 A Lead becomes an Opportunity once it is qualified. The Opportunities page is similar to the Leads page. The only difference is the filtered status code in set_query_filter is Status = 2.
+
+# Customers / Won Page
+
+Customers/Won has the Status = 3. Similar to Leads and Opportunities, Customers/Won can also have Notes.
+
+# Manager Dashboard
+
+The sales manager will have access to all records in the sales pipeline as well as the ability to manage sales team and customer data.
+
+We will have a single web page with a tabbed menu for this section of the CRM.
