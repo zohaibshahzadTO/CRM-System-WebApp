@@ -126,3 +126,11 @@ Each page indicates a different stage in a typical sales cycle.
 When a sales team member logged in, the first page he sees is a list of current tasks.
 
 As you may recall, our Notes table holds all the sales activity information. We can create a datagrid and populate it from the Notes table using phpGrid.
+
+# Leads Page
+
+The leads page contains list of current leads that the sales person is responsible for. Each Lead can have one or many Notes. We will use the phpGrid master-detail feature for that. We also need to use set_query_filter() to display
+
+# Opportunity Page
+
+A Lead becomes an Opportunity once it is qualified. The Opportunities page is similar to the Leads page. The only difference is the filtered status code in set_query_filter is Status = 2.
