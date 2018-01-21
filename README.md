@@ -80,8 +80,9 @@ A database schema is the structure that represents the logical view such as tabl
 
 It is a good practice to have one primary key for each table in a relational database. A primary key is a unique identifier for each record. It can be the social security number (SSN), vehicle identification number (VIN), or auto-increment number. This is a unique number that is generated when a new record is inserted into a table.
 
-Below is the database diagram of our simple CRM. The key symbol in each table represents the table primary key.
+Below is the database diagram of our simple CRM. The key symbol in each table represents the table primary key:
 
+![alt text](https://github.com/Hollow27/CRM-System-WebApp/blob/master/database/database%20table%20diagram.png)
 
 
 
